@@ -61,13 +61,12 @@ http://youtu.be/TtMHhqrYf90
 	}
 
 	function updateDisplay(){
-	  $("#displayArea").text(counter);
+	  $("span").text(counter);
 		//change the text of the span inside the div.  The div has an id of displayArea.  The text will be changed to the value currently inside the global variable of counter
 	}
 
 	function handleMouseout()
 	{
-	  setInterval(decreaseCounter,500);
 		timerID = setInterval(decreaseCounter,500);
 		//call the setInterval function (it is a default function, not one defined here).  pass in the following 2 parameters: the name of the function that decreases the counter, and 500.   setInterval returns a value, save that value in the global variable "timerID"
 	}
